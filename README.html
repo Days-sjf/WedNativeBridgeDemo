@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">iOS原生和Web交互方案探讨</h1>
+
+<hr>
+
+<h2 id="toc_1">UIWebView</h2>
+
+<h3 id="toc_2">描述</h3>
+
+<p>我从事iOS的开发比较早，那个时候iOS开发使用原生控件是主流。但有时需要加载网页，那么此时就需要到了UIWebView。随着iOS开发的深入，以及多平台的兼容，很多App多少需要使用到Web。</p>
+
+<blockquote>
+<p>网上有现成的方案<a href="https://github.com/marcuswestin/WebViewJavascriptBridge">WebViewJavascriptBridge</a></p>
+</blockquote>
+
+<h3 id="toc_3">使用方式</h3>
+
+<p>UIWebView中原生和Web的交互，可以使用两个方法来进行:</p>
+
+<ul>
+<li><p>原生调用Web
+<code>- (NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;</code></p></li>
+<li><p>Web调用原生: 苹果没有提供直接的方案，添加一个隐藏的iframe设置URL，然后在UIWebViewDelegate中进行拦截(Cordova就是使用这种机制)
+<code>- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;</code></p></li>
+</ul>
+
+<h3 id="toc_4">源代码</h3>
+
+<ul>
+<li><a href="https://github.com/yincheng1988/WedNativeBridgeDemo/tree/master/WebViewDemo">Demo地址</a></li>
+</ul>
+
+<h2 id="toc_5">JavaScriptCore</h2>
+
+<h3 id="toc_6">描述</h3>
+
+<p>iOS7以后，苹果推出了JavaScriptCore框架。将WebKit中的JavaScript引擎进行了封装。这样我们就可以调用一个运行JavaScript代码的环境了。</p>
+
+<h3 id="toc_7">使用方式</h3>
+
+<ul>
+<li>协同UIWebView使用，在WebView加载成功后，获取运行环境JSContext
+<code>JSContext *context = [webView valueForKeyPath:@&quot;documentView.webView.mainFrame.javaScriptContext&quot;];</code></li>
+<li>通过<code>- (JSValue *)evaluateScript:(NSString *)script;</code>执行JavaScript代码。这样就完成了原生调用Web了。</li>
+<li>Web调用原生，OC代码中需要实现JSExport协议
+<code>
+// OC中定义
+JSContext[@&quot;consoleLog&quot;] = ^(NSString *str) {
+NSLog(@&quot;%@&quot;, str);
+};
+// JS调用
+consoleLog(&#39;test&#39;);
+</code></li>
+<li><p>JSValue中提供了Web和原生中的对象的转换表</p>
+
+<table>
+<thead>
+<tr>
+<th>Objective-C type</th>
+<th>JavaScript type</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>nil</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>NSNull</td>
+<td>null</td>
+</tr>
+<tr>
+<td>NSString</td>
+<td>string</td>
+</tr>
+<tr>
+<td>NSNumber</td>
+<td>number, boolean</td>
+</tr>
+<tr>
+<td>NSDictionary</td>
+<td>Object object</td>
+</tr>
+<tr>
+<td>NSArray</td>
+<td>Array object</td>
+</tr>
+<tr>
+<td>NSDate</td>
+<td>Date object</td>
+</tr>
+<tr>
+<td>NSBlock (1)</td>
+<td>Function object (1)</td>
+</tr>
+<tr>
+<td>id (2)</td>
+<td>Wrapper object (2)</td>
+</tr>
+<tr>
+<td>Class (3)</td>
+<td>Constructor object (3)</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>Note：Web调用原生后，所执行的Block是在子线程中，所以UI的操作，需要放入主线程中</p></li>
+</ul>
+
+<h3 id="toc_8">源代码</h3>
+
+<ul>
+<li><a href="https://github.com/yincheng1988/WedNativeBridgeDemo/tree/master/WebViewDemo">Demo地址</a></li>
+</ul>
+
+<h3 id="toc_9">参考资料</h3>
+
+<ul>
+<li><a href="http://nshipster.cn/javascriptcore/">NSHipster</a></li>
+</ul>
+
+<h2 id="toc_10">WKWebView</h2>
+
+<h3 id="toc_11">描述</h3>
+
+<p>iOS8以后，推出了新框架WebKit和WKWebView，用于替代老旧的UIKit中的UIWebView。
+官方在说明中强调WKWebView的优点：</p>
+
+<blockquote>
+<ol>
+<li>性能和稳定性上的极大提升；</li>
+<li>60fps的滚动刷新率以及内置手势；</li>
+<li>高效的app和web信息交换通道；</li>
+<li>使用和Safari相同的JavaScript 引擎；</li>
+<li>将UIWebView和UIWebViewDelegate在WKWebKit中重构成14个类以及3个协议；</li>
+</ol>
+</blockquote>
+
+<h3 id="toc_12">使用方式</h3>
+
+<ul>
+<li><p>页面加载</p>
+
+<div><pre><code class="language-none">- (WKNavigation *)loadRequest:(NSURLRequest *)request;
+- (WKNavigation *)loadHTMLString:(NSString *)string baseURL:(NSURL *)baseURL;
+
+// iOS9新增
+- (WKNavigation *)loadFileURL:(NSURL *)URL allowingReadAccessToURL:(NSURL *)readAccessURL;
+- (WKNavigation *)loadData:(NSData *)data MIMEType:(NSString *)MIMEType characterEncodingName:(NSString *)characterEncodingName baseURL:(NSURL *)baseURL;
+
+// 示例
+[wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@&quot;https://baidu.com&quot;]]];
+NSURL *URL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@&quot;index&quot; ofType:@&quot;html&quot;]];
+[wkWebView loadFileURL:URL allowingReadAccessToURL:[NSBundle mainBundle].resourceURL];</code></pre></div></li>
+<li><p>访问历史</p>
+
+<blockquote>
+<p>WKWebView新增了访问指定历史记录，在UIWebView中也有方案实现。
+参考<a href="https://github.com/wangyangcc/IMYWebView/blob/master/Classes/IMYWebView.m">IMYWebView.m</a>实现</p>
+</blockquote>
+
+<div><pre><code class="language-none">- (WKNavigation *)goToBackForwardListItem:(WKBackForwardListItem *)item;
+
+// UIWebView
+[UIWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@&quot;window.history.go(-%ld)&quot;, (long)index]];
+
+// WKWebView
+WKBackForwardListItem *item = WKWebView.backForwardList.backList[index];
+[WKWebView goToBackForwardListItem:item];</code></pre></div></li>
+<li><p>调用JavaScript</p>
+
+<blockquote>
+<p>UIWebView中调用JS的API是同步，而WKWebView中调用JS的API是异步。</p>
+</blockquote>
+
+<div><pre><code class="language-none">// UIWeView
+- (NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script;
+
+// WKWebView
+- (void)evaluateJavaScript:(NSString *)javaScriptString completionHandler:(void (^)(id, NSError *error))completionHandler;</code></pre></div></li>
+<li><p>JavaScript与原生的通信</p>
+
+<ul>
+<li>WebKit中提供了<code>WKUserScript</code>类来进行JS脚本注入</li>
+<li>原生通过注册<code>WKScriptMessageHandler</code>协议，让JavaScript与原生进行通信：<code>window.webkit.messageHandlers.{name}.postMessage({body})</code></li>
+</ul>
+
+<div><pre><code class="language-none">// 注入JS脚本
+NSString *jsString = @&quot;function message(msg) { alert(msg); }&quot;;
+WKUserScript *script = [[WKUserScript alloc] initWithSource: jsString injectionTime:injectionTime forMainFrameOnly:YES];
+[WKWebView.userContentController addUserScript:script];
+
+// 注册通信协议消息
+[WKWebView.userContentController addScriptMessageHandler:id&lt;WKScriptMessageHandler&gt;handler name:@&quot;message&quot;];
+// JS与原生进行通信
+window.webkit.messageHandlers. message.postMessage(&#39;Test&#39;);</code></pre></div></li>
+<li><p><code>WKNavigationDelegate</code>协议</p>
+
+<div><pre><code class="language-none">// 页面开始加载时调用
+WKWebView: - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation;
+UIWebView: - (void)webViewDidStartLoad:(UIWebView *)webView;
+
+// 当内容开始返回时调用
+WKWebView: - (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation;
+
+// 页面加载完成之后调用
+WKWebView: - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation;
+UIWebView: - (void)webViewDidFinishLoad:(UIWebView *)webView;
+
+// 页面加载失败时调用
+WKWebView: - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation;
+UIWebView: - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
+
+/// 页面跳转
+WKWebView:
+// 接收到服务器跳转请求之后调用
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation;
+// 在收到响应后，决定是否跳转
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationResponse:(WKNavigationResponse *)navigationResponse decisionHandler:(void (^)(WKNavigationResponsePolicy))decisionHandler;
+// 在发送请求之前，决定是否跳转
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
+
+UIWebView:
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;</code></pre></div></li>
+<li><p>加载进度<code>estimatedProgress</code>和标题<code>title</code></p>
+
+<blockquote>
+<p>可以非常方便的通过KVO来进行监听</p>
+</blockquote></li>
+<li><p><code>WKUIDelegate</code>协议</p>
+
+<blockquote>
+<p>通过此协议使用原生UI来定义Web中的Alert、Confirm、Prompt控件</p>
+</blockquote></li>
+<li><p>注意事项</p>
+
+<ul>
+<li>iOS9后提供<code>loadFileURL:allowingReadAccessToURL:</code>方式加载本地HTML。</li>
+<li>但是在iOS9之前使用<code>loadRequest:</code>方式加载本地HTML，会出现无法读取的问题。<a href="http://stackoverflow.com/questions/24882834/wkwebview-not-loading-local-files-under-ios-8%20http://www.jianshu.com/p/ccb421c85b2e">解决方案</a></li>
+</ul></li>
+</ul>
+
+<h3 id="toc_13">源代码</h3>
+
+<ul>
+<li><a href="https://github.com/yincheng1988/WedNativeBridgeDemo/tree/master/WebViewDemo">Demo地址</a></li>
+</ul>
+
+<h3 id="toc_14">参考资料</h3>
+
+<ul>
+<li><a href="http://nshipster.cn/wkwebkit/">NSHipster</a></li>
+</ul>
+
+<h3 id="toc_15">Cordova</h3>
+
+<h3 id="toc_16">描述</h3>
+
+<p>Cordova是一款比较成熟的Hybrid开发框架，由于推出时间较长，网上也有许多Cordova的教程。由于要考虑WKWebView，所以首选是Cordova的WKWebView插件，而这个插件是要求必须4.0版本开始，所以对于4.0以前的版本就不做了解了。</p>
+
+<h3 id="toc_17">安装</h3>
+
+<ul>
+<li>npm安装</li>
+</ul>
+
+<div><pre><code class="language-none">npm install -g cordova #确保安装node，node安装命令brew install node
+cordova create wkwvtest my.project.id wkwvtest
+cordova platform add ios@4
+cordova plugin add cordova-plugin-wkwebview-engine</code></pre></div>
+
+<ul>
+<li>pod安装</li>
+</ul>
+
+<div><pre><code class="language-none">    pod &#39;Cordova&#39;, &#39;~&gt; 4.0.0&#39;
+    pod &#39;cordova-plugin-wkwebview-engine&#39;, &#39;~&gt; 1.0.2&#39; #要求的最低版本是iOS9.0</code></pre></div>
+
+<h3 id="toc_18">使用方式</h3>
+
+<ul>
+<li><p>配置文件设置config.xml(cordova默认配置文件，也可以指定其他配置文件)</p>
+
+<ul>
+<li>设置allow-intent和allow-navigation</li>
+<li>设置需要支持的插件</li>
+<li>设置支持WKWebView插件，添加下面配置：</li>
+</ul>
+
+<div><pre><code class="language-none">&lt;feature name=&quot;CDVWKWebViewEngine&quot;&gt;
+    &lt;param name=&quot;ios-package&quot; value=&quot;CDVWKWebViewEngine&quot; /&gt;
+&lt;/feature&gt;
+&lt;preference name=&quot;CordovaWebViewEngine&quot; value=&quot;CDVWKWebViewEngine&quot; /&gt;</code></pre></div></li>
+<li><p>使用CDVWebViewEngineProtocol协议来操作JS</p>
+
+<blockquote>
+<p>4.0之前是UIWebView，4.0之后被重构了CDVWebViewEngineProtocol协议。(WKWebView的自动切换就是利用这个协议实现)</p>
+</blockquote></li>
+<li><p>原生调用Web
+<code>
+[self.webViewEngine evaluateJavaScript:script completionHandler:nil];
+</code></p></li>
+<li><p>Web调用原生</p>
+
+<ul>
+<li>通过以前的URL拦截方式进行，不过目前不能直接支持，我们还是需要修改源码才能完成</li>
+<li>使用cordova的插件</li>
+</ul></li>
+</ul>
+
+<div><pre><code class="language-none">// 定义plugin-dialog.js
+cordova.define(&quot;cordova-plugin-dialog-demo&quot;, function(require, exports, module) {
+ var exec = require(&#39;cordova/exec&#39;),
+ cordova = require(&#39;cordova&#39;);
+ 
+ var Dialog = function() {
+ };
+ 
+ Dialog.prototype.showMsg = function(successCallback, errorCallback, options) {
+     var params = options || {};
+     cordova.exec(null, null, &#39;DialogPlugin&#39;, &#39;showMessage&#39;, [params]);
+ };
+ 
+ module.exports = new Dialog();
+});
+// 引用dialog插件（cordova_plugins.js）
+{
+        &quot;id&quot;: &quot;cordova-plugin-dialog-demo&quot;,
+        &quot;file&quot;: &quot;plugins/dialog/cordova_plugins_dialog.js&quot;,
+        &quot;clobbers&quot;: [
+           &quot;dialog&quot;
+        ]
+    }
+// 定义Dialog处理类
+@interface DialogPlugin : CDVPlugin
+- (void)showMessage:(CDVInvokedUrlCommand *)command;
+@end
+
+// html中调用
+function test1() {
+    dialog.showMsg(function(){}, function(){}, {&#39;title&#39;:&#39;hello world&#39;});
+}</code></pre></div>
+
+<ul>
+<li>目前Github上有需要已开发完成的插件，有需要的可以下载下来使用</li>
+</ul>
+
+<h3 id="toc_19">源代码</h3>
+
+<ul>
+<li><a href="https://github.com/yincheng1988/WedNativeBridgeDemo/tree/master/CordovaWKWebViewDemo/CordovaWKWebViewDemo">Demo地址</a></li>
+</ul>
+
+<h3 id="toc_20">参考资料</h3>
+
+<ul>
+<li><a href="http://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html">官方iOS文档</a></li>
+<li><a href="https://github.com/apache/cordova-ios">Cordova-ios</a></li>
+<li><a href="https://github.com/apache/cordova-plugin-wkwebview-engine">WKWebView插件</a></li>
+</ul>
+
+<h3 id="toc_21">Crosswalk</h3>
+
+<h3 id="toc_22">描述</h3>
+
+<p>Crosswalk官方宣传是一款基于Chromium内核的web引擎，通过内置web引擎，提供统一的API，这样来达到多平台兼容。
+查看官方的<a href="https://crosswalk-project.org/documentation/ios.html">iOS文档</a>，发现基于WKWebView，而不是我们一开始理解的内置web引擎。
+查看了下，发现crosswalk也提供了兼容Cordova的<a href="https://github.com/crosswalk-project/ios-extensions-crosswalk.git">插件</a>。</p>
+
+<h3 id="toc_23">安装</h3>
+
+<ul>
+<li>通过github上下载源码 <a href="https://github.com/crosswalk-project/crosswalk-ios">crosswalk-ios</a>，<a href="https://github.com/crosswalk-project/ios-extensions-crosswalk.git">ios-extensions-crosswalk</a></li>
+<li>通过cocoapods更新<code>pod &#39;crosswalk-ios&#39;, &#39;~&gt; 1.2.0&#39;</code></li>
+<li>通过cocoapods更新cordova的crosswalk插件<code>pod &#39;crosswalk-extension-cordova&#39;, &#39;~&gt; 1.1&#39;</code></li>
+<li>由于crosswalk-ios部分代码是使用Swift开发，所以pod的配置需要设置成framework方式，下面是我的Podfile</li>
+</ul>
+
+<div><pre><code class="language-none">platform :ios, &#39;8.0&#39;
+use_frameworks!
+inhibit_all_warnings!
+
+pod &#39;crosswalk-extension-cordova&#39;, &#39;~&gt; 1.1&#39;</code></pre></div>
+
+<h3 id="toc_24">使用方式</h3>
+
+<ul>
+<li>使用XWalkView来进行承载</li>
+<li>crosswalk-ios依赖了一个第三方库<a href="https://github.com/swisspol/GCDWebServer">GCDWebServer</a>，通过查看源码，发现是为了解决iOS8下WKWebView无法加载本地文件的问题。相对于<a href="https://github.com/apache/cordova-plugin-wkwebview-engine">cordova-plugin-wkwebview-engine</a>插件的最低安装版本iOS9，做了更多的兼容。</li>
+<li><p>原生调用Web</p>
+
+<blockquote>
+<p>使用XWalkView提供的<code>- (WKUserScript*)injectScript:(NSString*)code</code>方法。由于XWalkView继承自WKWebView，所以使用WKWebView的方法</p>
+</blockquote></li>
+<li><p>Web调用原生</p>
+
+<ul>
+<li>通过<code>- (void)loadExtension:(NSObject*)object namespace:(NSString*)ns</code>初始化extension</li>
+<li>将定义的extension和iOS代码中的类进行关联，通过配置extensions.plist进行</li>
+<li><code>XWalkReflection</code>类中定义了一些规则，比如<code>jsfunc_</code>。关联类中将需要被Web调用的函数名加上<code>jsfunc_</code>前缀即可。</li>
+</ul>
+
+<div><pre><code class="language-none">// 关联Dialog类，需要配置extensions.plist
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+    &lt;key&gt;XWalkExtensions&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt; xwalk.demo.dialog &lt;/key&gt;
+        &lt;string&gt; Dialog &lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;
+// 或者通过代码来进行关联绑定
+[XWalkExtensionFactory register:@&quot;xwalk.demo.dialog&quot; cls:NSClassFromString(@&quot;Dialog&quot;)];
+
+// 设置extension名为 xwalk.demo.dialog
+id ext = [XWalkExtensionFactory createExtension:@&quot;xwalk.demo.dialog&quot;];
+[xwalkView loadExtension:ext namespace:name];
+
+// 定义类Dialog类继承XWalkExtension
+// 官方给的实例func jsfunc_echo(cid: UInt32, message: String, callback: UInt32)
+@interface Dialog : XWalkExtension
+    - (void)jsfunc_showMsg:(UInt32)cid message:(NSString *)message callback:(UInt32)callback;
+@end
+
+//  web端调用native {extensionName}.{function}({params})
+xwalk.demo.dialog.showMsg(&#39;test&#39;, function(){});</code></pre></div></li>
+<li><p>使用Cordova的crosswalk插件</p>
+
+<blockquote>
+<p>Cordova从4.0开始的插件机制，非常方便了我们的开发，同样crosswalk也提供了相应的插件，通过上面介绍的可以进行安装。
+有了Cordova的支持，我们就使用Cordova的插件机制进行插件开发。这里应该是融合和Crosswalk和Cordova-plugin的开发方式。
+原生调用Web，和上面的相同，下面介绍的是Web调用原生。
+下面以我定义一个Dialog插件为例：</p>
+</blockquote>
+
+<div><pre><code class="language-none">// JS dialog.js
+cordova.define(&quot;org.apache.cordova.demo.dialog&quot;, function(require, exports, module) {
+var exec = require(&#39;cordova/exec&#39;);
+cordova = require(&#39;cordova&#39;);
+
+function Dialog() {
+}
+Dialog.prototype.dialogMessage = function(params) {
+   params = params || {};
+   exec(null, null, &quot;ObjectiveC_Dialog&quot;, &quot;showMessage&quot;, [params]);
+}
+module.exports = new Dialog();
+});
+
+// Native DialogPlugin.h/m
+@interface DialogPlugin : CDVPlugin
+    - (void)showMessage:(CDVInvokedUrlCommand *)command;
+@end
+
+// JS和native进行关联，系统默认配置文件是manifest.plist，需要下面定义
+&lt;key&gt;cordova_plugins&lt;/key&gt;
+&lt;array&gt;
+    &lt;dict&gt;
+        &lt;key&gt;class&lt;/key&gt;
+        &lt;string&gt;DialogPlugin&lt;/string&gt;
+        &lt;key&gt;name&lt;/key&gt;
+        &lt;string&gt; ObjectiveC_Dialog &lt;/string&gt;
+    &lt;/dict&gt;
+&lt;/array&gt;
+
+// web端调用native
+dialog.dialogMessage({&#39;title&#39;:&#39;Hello&#39;});</code></pre></div>
+
+<h3 id="toc_25">注意事项</h3>
+
+<p>cordova-plugin-wkwebview-engine对cordova-ios的源码做过一些修改，所以会与cordova-ios有些不同。如果有需要的话必须等待原作者的维护和更新。</p></li>
+</ul>
+
+<h3 id="toc_26">源代码</h3>
+
+<ul>
+<li><a href="https://github.com/yincheng1988/WedNativeBridgeDemo/tree/master/Crosswalk_CordovapulginDemo">Demo地址</a></li>
+</ul>
+
+<h3 id="toc_27">参考资料</h3>
+
+<ul>
+<li><a href="https://crosswalk-project.org/documentation/ios.html">Crosswalk</a></li>
+<li><a href="https://github.com/crosswalk-project/crosswalk-ios">crosswalk-ios</a></li>
+<li><a href="https://github.com/crosswalk-project/ios-extensions-crosswalk.git">ios-extensions-crosswalk</a></li>
+</ul>
+
+
+
+
+</body>
+
+</html>

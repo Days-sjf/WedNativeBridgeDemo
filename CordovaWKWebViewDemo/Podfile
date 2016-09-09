@@ -1,0 +1,9 @@
+platform :ios, '9.0'
+
+use_frameworks!
+
+inhibit_all_warnings!
+#link_with 'WebViewDemo'
+
+pod 'Cordova', '~> 4.1.1'
+pod 'cordova-plugin-wkwebview-engine', '~> 1.0.2'
